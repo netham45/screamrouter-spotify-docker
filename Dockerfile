@@ -6,7 +6,7 @@ RUN apt-get update -y && \
     echo "deb http://repository.spotify.com stable non-free" | tee /etc/apt/sources.list.d/spotify.list && \
     sed -i 's/ main/ main contrib non-free security/g' /etc/apt/sources.list.d/* && \
     apt-get update -y && \
-    apt-get install -y tigervnc-standalone-server openbox pulseaudio avahi-daemon spotify-client firefox-esr gstreamer1.0-plugins-good && \
+    apt-get install -y tigervnc-standalone-server openbox gstreamer1.0-plugins-good pulseaudio avahi-daemon spotify-client firefox-esr && \
     rm -rf /var/lib/apt/lists
 COPY app/ /app/
 COPY root/.config/openbox/ /root/.config/openbox/
