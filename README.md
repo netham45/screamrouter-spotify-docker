@@ -9,7 +9,7 @@ This container will output 16-bit 44.1kHz PCM audio encapsulated in an RTP strea
 ## Usage
 
 1. Clone the repo ```git clone https://github.com/netham45/screamrouter-spotify-docker.git```
-2. On the computer running Screamrouter, build the container image ```docker build screamrouter-spotify-docker/ -t screamrouter-spotify-docker```
-3. Make an instance of the container ```docker run -d -h "Spotify" screamrouter-spotify-docker```
+2. On the computer running Screamrouter, build the container image ```cd screamrouter-spotify-docker;./build.sh```
+3. Make an instance of the container ```./run.sh```
 
 At this point ScreamRouter's Auto-Detection should pick up on the container and add it to the interface.
