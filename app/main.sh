@@ -9,6 +9,7 @@ Xtigervnc -desktop "$VNC_DESKTOP_NAME" -geometry "$VNC_GEOMETRY" -listen tcp -ac
 sleep 2
 export DISPLAY=:0.0
 openbox &
+/app/media_keys.sh &
 
 export DBUS_SESSION_BUS_ADDRESS="$(dbus-daemon --session --fork --print-address)"
 ulimit -n 1024

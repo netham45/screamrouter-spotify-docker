@@ -13,3 +13,13 @@ This container will output 16-bit 48kHz PCM audio encapsulated in an RTP stream 
 3. Make an instance of the container ```./run.sh```
 
 At this point ScreamRouter's Auto-Detection should pick up on the container and add it to the interface.
+
+VNC listens on port 5900
+
+There is a script listening on port 9999 for incoming UDP packets.
+
+Sending a packet containing 'n' will send XF86AudioNext
+
+Sending a packet containing 'p' will send XF86AudioPrev
+
+Sending a packet containing 'P' will send XF86AudioPlay
